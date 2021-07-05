@@ -1,3 +1,13 @@
+# withr bug
+# library(withr)
+# packageVersion("withr")
+
+# withr fix
+# restart R session first
+library(withr, lib.loc = "~/.withr/") # take withr in the .withr folder
+packageVersion("withr")
+
+
 library(rstan)
 x <- rnorm(n = 10)
 a <- 0
